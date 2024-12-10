@@ -1,0 +1,82 @@
+.container {
+	padding: 48px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	max-width: 327px;
+	background-color: aqua;
+}
+
+.sedan {
+	background-color: #603a11;
+}
+.suv {
+	background-color: #002f32;
+}
+.luxury {
+	background-color: #002121;
+}
+
+.imageBox {
+	width: 64px;
+	height: 40px;
+}
+
+.carImage {
+	position: relative;
+	left: 20px;
+	top: -30px;
+}
+
+.circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.title {
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-size: 40px;
+}
+
+.description {
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.button {
+	width: 146px;
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	color: transparent;
+	padding: 11px 31px;
+	border-radius: 40px;
+}
+@media (hover: hover) {
+	.button:hover {
+		background-color: transparent;
+		cursor: pointer;
+	}
+	.button:hover .button-sedan {
+		color: #f2f2f2;
+	}
+	.button:hover .button-suv {
+		color: #f2f2f2;
+	}
+	.button:hover .button-luxury {
+		color: #f2f2f2;
+	}
+}
+
+.button-sedan {
+	color: #e28625;
+}
+.button-suv {
+	color: #006971;
+}
+.button-luxury {
+	color: #004140;
+}
